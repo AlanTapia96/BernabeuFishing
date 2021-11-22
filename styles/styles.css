@@ -1,0 +1,188 @@
+html {
+  font-size: 16px;
+  height: 100%;
+}
+
+@media only screen and (min-width: 720px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1240px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+body {
+  min-height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/***** NAVBAR *****/
+
+nav {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+
+.nav-link {
+  font-size: 0.9rem;
+}
+
+/* Buttons EN-CH */
+.language-change {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 19%;
+  height: 30px;
+}
+
+.language-change .lang {
+  position: relative;
+  width: 30px;
+  height: 26px;
+  filter: grayscale(90%);
+  cursor: pointer;
+}
+
+#china {
+  height: 27px !important;
+  margin-bottom: 1.1px;
+}
+
+.language-change .active {
+  filter: grayscale(0);
+}
+
+/*** Banner home ***/
+#banner-home {
+  padding-top: 2rem;
+  height: 100%;
+  position: relative;
+  /* background-image: url("../assets/Bernabeu-banner-home.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+}
+
+#banner-home img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+/****** Whatsapp button *******/
+.whatsapp {
+  position: fixed;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 0 1rem 0.5rem 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 1.875rem;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(107, 170, 44);
+}
+
+.whatsapp:hover {
+  color: rgb(107, 170, 44);
+}
+
+/********* ScrollTopButton *********/
+.scroll-top-btn {
+  position: fixed;
+  bottom: 1vh;
+  right: calc(0.25rem + 1vw);
+  width: 2.7rem;
+  height: 2.7rem;
+  border-radius: 50%;
+  font-size: 1rem;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  transition: all 0.3s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-top-btn:hover {
+  background-color: lightsteelblue;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/****** Footer ******/
+
+footer {
+  margin-top: 2rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(147, 152, 158);
+  color: whitesmoke;
+}
+
+.footer-container {
+  height: 100px;
+}
+
+.marca {
+  padding-left: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Social media */
+
+.social {
+}
+
+.social i {
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  footer {
+    /* margin-top: 30vh; */
+  }
+}
+
+@media (min-width: 991px) {
+  .language-change {
+    justify-content: center;
+  }
+
+  #china {
+    margin-left: 0.5rem;
+  }
+}
