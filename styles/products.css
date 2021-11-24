@@ -41,7 +41,8 @@ p {
 }
 
 .accordion-button {
-  height: 40vh;
+  height: 20rem;
+  width: 100%;
 }
 
 .accordion-button:focus {
@@ -63,24 +64,37 @@ p {
 
 .accordion-button:hover .banner-product {
   overflow: hidden;
-  opacity: 1;
-  transform: scale(1.1);
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .banner-product {
   position: absolute;
-  z-index: 100;
-  width: 100%;
+  display: block;
   height: 100%;
-  object-fit: unset;
+  width: 100%;
   top: 0;
   left: 0;
-  opacity: 0.9;
-  transition: all 1s ease-in-out;
+  transition: all 1s ease;
+  background-image: url("../assets/productos/langostinos/LANGOSTINO_pagina\ principal_Mesa\ de\ trabajo\ 1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* opacity: 1; */
+}
+
+.banner-product::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* background-color: rgba(0, 0, 0, 0.09); */
 }
 
 .box {
-  background-color: rgba(255, 255, 255, 0.3);
+  /* background-color: rgba(255, 255, 255, 0.3); */
   border-radius: 10px;
   text-align: center;
   line-height: 1;
@@ -88,7 +102,7 @@ p {
   -webkit-backdrop-filter: blur(10px);
   max-width: 50%;
   max-height: 50%;
-  padding: 20px 40px;
+  padding: 10px 20px;
 }
 
 .caracteristicas p {
@@ -186,7 +200,7 @@ li {
 
 @media (max-width: 768px) {
   .accordion-button {
-    height: 20vh;
+    height: 15rem;
   }
 
   .box {
