@@ -30,6 +30,9 @@ body {
 }
 
 /***** NAVBAR *****/
+.navbar {
+  border-bottom: 14px solid red;
+}
 
 nav {
   position: fixed !important;
@@ -39,7 +42,11 @@ nav {
 }
 
 .nav-link {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+}
+
+.navbar-nav a {
+  text-transform: uppercase;
 }
 
 /* Buttons EN-CH */
