@@ -11,3 +11,22 @@ sr.reveal(".principal-img", {
   origin: "bottom",
   distance: "300px",
 });
+
+sr.reveal('.accordion-item h3', {
+  delay: 200,
+  duration: 450,
+  reset: false
+});
+
+sr.reveal('.accordion-item .caracteristicas', {
+  delay: 200,
+  duration: 450,
+  reset: false
+});
+
+sr.reveal('.card', {
+  delay: 300,
+  duration: 450,
+  reset: false
+});
+
