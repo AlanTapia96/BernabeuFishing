@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,900&display=swap');
+
 html {
   font-size: 16px;
   height: 100%;
@@ -77,6 +79,8 @@ nav {
 
 .nav-link {
   font-size: 0.8rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: boldgit ;
 }
 
 .navbar-nav a {
