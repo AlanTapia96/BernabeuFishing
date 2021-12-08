@@ -19,12 +19,17 @@ html {
 
 @media only screen and (min-width: 1240px) {
   html {
-    font-size: 24px;
+    font-size: 22px;
   }
+}
+
+header{
+  position: relative;
 }
 
 body {
   min-height: 100%;
+  height: auto!important;
   position: relative;
   display: flex;
   flex-direction: column;
