@@ -1,75 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300&display=swap");
+
 body {
-    color: #000;
-    overflow-x: hidden;
-    height: 100%;
-    background-image: url("../assets/Bernabeu-banner-home.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-size: 100% 100% */
+  color: #000;
+  overflow-x: hidden;
+  height: 100%;
+  background-image: url("../assets/Bernabeu-banner-home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-size: 100% 100% */
+}
+
+#contact-form {
+  padding-top: 9%;
 }
 
 .card {
-    padding: 30px 40px;
-    margin: 2rem 0;
-    /* border: none !important; */
-    box-shadow: rgb(0 0 0 / 20%) 0px 6px 20px 19px
+  padding: 30px 40px;
+  margin: 2rem 0;
+  /* border: none !important; */
+  box-shadow: rgb(0 0 0 / 20%) 0px 6px 20px 19px;
 }
 
 .blue-text {
-    /* color: #00BCD4 */
-    color: #00BCD4
+  /* color: #00BCD4 */
+  color: #00bcd4;
 }
 
 .form-control-label {
-    /* margin-bottom: 0 */
-    font-size: .8rem;
+  /* margin-bottom: 0 */
+  font-size: 0.8rem;
+  font-family: "Montserrat", sans-serif;
 }
 
-.form-group{
-    margin-bottom: .5rem;
+.form-group {
+  margin-bottom: 0.5rem;
 }
 
 input,
 textarea,
 button {
-    padding: 8px 15px;
-    border-radius: 5px !important;
-    margin: 5px 0px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    font-size: .5rem !important;
-    font-weight: 300
+  padding: 8px 15px;
+  border-radius: 5px !important;
+  margin: 5px 0px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  font-size: 0.8rem;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  resize: vertical;
+  max-height: 5rem;
 }
 
-#message{
-    height: 5rem;
+#message {
+  height: 5rem;
 }
 
 input:focus,
 textarea:focus {
-    -moz-box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    border: 1px solid #00BCD4;
-    outline-width: 0;
-    font-weight: 400
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 1px solid #00bcd4;
+  outline-width: 0;
+  font-weight: 400;
 }
 
 .btn-block {
-    text-transform: uppercase;
-    font-size: 15px !important;
-    font-weight: 400;
-    height: 43px;
-    cursor: pointer
+  text-transform: uppercase;
+  font-size: 15px !important;
+  font-weight: 400;
+  height: 43px;
+  cursor: pointer;
 }
 
 .btn-block:hover {
-    color: #fff !important
+  color: #fff !important;
 }
 
 button:focus {
-    -moz-box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    outline-width: 0
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  outline-width: 0;
+}
+
+@media (max-width: 768px) {
+  #contact-form {
+    padding-top: 13%;
+  }
+}
+
+@media (max-width: 438px) {
+  #contact-form {
+    padding-top: 18%;
+  }
 }

@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300&display=swap");
 
-
 html {
   font-size: 16px;
   height: 100%;
@@ -201,7 +200,7 @@ li {
   margin: auto;
 }
 
-.variedades h4{
+.variedades h4 {
   font-size: 1.5rem;
   margin: 3rem 0 1rem;
 }
@@ -321,7 +320,7 @@ li {
     top: 25%;
   }
 
-  .principal{
-    padding-bottom: .8rem
+  .principal {
+    padding-bottom: 0.8rem;
   }
 }
