@@ -1,3 +1,27 @@
+body {
+  /* background: linear-gradient(
+    38deg,
+    rgb(95, 93, 93) 0%,
+    rgba(221, 217, 228, 0.579) 30%,
+    /* rgba(0, 0, 0, 0.055059523809523836) 66%,  rgba(254, 255, 255, 1) 100%
+  );
+  background-size: 450% 450%; */
+  position: relative;
+  /* animation: cambiar 12s ease-in-out infinite; */
+}
+
+@keyframes cambiar {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
 #sobre-nosotros {
   padding-top: 9%;
 }
@@ -8,6 +32,7 @@
 }
 
 .info-card {
+  position: relative;
   height: 24rem;
   width: 33%;
   border-radius: 8px;
@@ -30,7 +55,26 @@
   opacity: 0;
   box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.9s ease;
+
   /* transition: transform 12s none; */
+}
+
+.img-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.img-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .card__inner:hover {
@@ -38,7 +82,9 @@
 }
 
 .card__inner.is-flipped {
-  transform: rotateY(180deg);
+  transform: rotateY(-180deg);
+  color: rgba(0, 0, 0, 0.55);
+  font-size: 32px;
 }
 
 .card__face {
@@ -53,17 +99,27 @@
 
 .card__face--front {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  padding-top: 2rem;
 }
 
 .card__face--front h2 {
+  /* color: rgba(0, 0, 0, 0.55); */
   color: rgba(0, 0, 0, 0.55);
-  font-size: 32px;
+  font-size: 2rem !important;
+  transform: rotateX(360deg);
 }
 
 .card__face--back {
   transform: rotateY(180deg);
+}
+
+.card__face--back p {
+  font-size: 32px;
+  color: rgba(0, 0, 0, 0.55);
+  padding: 1rem 1.5rem;
+  transform: rotateY(360deg);
 }
 
 .card__content {
@@ -71,13 +127,13 @@
   height: 100%;
 }
 
-.card__header h2 {
+/* .card__header h2 {
   color: #fff;
   font-size: 32px;
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
-}
+} */
 
 .card__body {
   padding: 1.7rem;
@@ -106,17 +162,23 @@
 
 @media (max-width: 768px) {
   p {
-    font-size: 16px;
+    font-size: 1rem !important;
+    padding: 1rem 1rem !important;
   }
 
   #sobre-nosotros {
-    padding-top: 18%;
+    padding-top: 12%;
   }
 
   .info-card {
     height: 25rem;
     width: 90%;
-    margin: 1rem 0;
+    margin: 2.5rem 0;
+    /* margin-top: 3rem; */
     /* padding-top: 1rem; */
+  }
+
+  .info-card:last-child {
+    margin-bottom: 0;
   }
 }
