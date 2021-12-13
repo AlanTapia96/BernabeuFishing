@@ -160,6 +160,9 @@ body {
   }
 }
 
+@media (min-width: 768) and (max-width: 1200px) {
+}
+
 @media (max-width: 768px) {
   p {
     font-size: 1rem !important;
