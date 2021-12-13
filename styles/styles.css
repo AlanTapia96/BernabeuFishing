@@ -253,7 +253,11 @@ footer a:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-52%, -44%);
+  transform: translate(-50%, -44%);
+}
+
+.footer-container > div > div div:last-child {
+  align-items: flex-start;
 }
 
 @media (max-width: 991px) {

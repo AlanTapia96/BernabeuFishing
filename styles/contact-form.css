@@ -51,6 +51,11 @@ button {
   max-height: 5rem;
 }
 
+.btn-submit {
+  background-color: rgba(0, 0, 0, 0.55) !important;
+  border-color: rgba(0, 0, 0, 0.55) !important;
+}
+
 #message {
   height: 5rem;
 }
