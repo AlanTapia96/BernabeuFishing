@@ -5,7 +5,7 @@ body {
 #carousel {
   margin-top: 6%;
   position: relative;
-  max-height: 100vh;
+  max-height: 80vh;
   height: 100%;
   width: 100%;
   box-shadow: grey;
@@ -23,8 +23,8 @@ body {
 }
 
 .carousel-inner {
-  max-height: 90vh;
-  height: 100vh;
+  max-height: 80vh;
+  height: 80vh;
 }
 
 .carousel-item {

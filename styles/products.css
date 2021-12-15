@@ -23,6 +23,13 @@ body {
   }
 }
 
+#products {
+  margin-top: 2rem;
+  background-image: url(../assets/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 h1,
 h2,
 h3,
@@ -40,7 +47,7 @@ p {
 .principal {
   text-align: center;
   margin-top: 5rem 3rem;
-  padding: 6rem 0 1.5rem;
+  padding: 8rem 0 1.5rem;
 }
 
 .principal-img {
@@ -59,6 +66,13 @@ p {
   width: 6.2rem;
   height: 6.2rem;
   margin: 0 auto;
+}
+
+.accordion,
+.accordion-collapse {
+  background-image: url(../assets/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .accordion-body {

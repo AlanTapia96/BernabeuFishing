@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./assets/logo_B.png" />
+    <link rel="shortcut icon" href="../assets/logo_B.png" />
     <title>Bernabeu Fishing</title>
     <!-- Font Awesome -->
     <script
@@ -18,8 +18,8 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="stylesheet" href="./styles/contact-form.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/contact-form.css" />
     <script src="https://unpkg.com/scrollreveal"></script>
   </head>
 
@@ -28,7 +28,7 @@
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
           <a class="navbar-brand logo" href="./index.html"
-            ><img src="./assets/logo.jpg"
+            ><img src="../assets/logo.jpg"
           /></a>
           <button
             class="navbar-toggler"
@@ -43,15 +43,14 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
-              <a class="nav-link" href="./productos.html">Productos</a>
-              <a class="nav-link" href="./nosotros.html">Pesca</a>
-              <a class="nav-link" href="./contacto.html">contacto</a>
-              <a class="nav-link" href="./nosotros.html">Sobre nosotros</a>
-              <!-- <a class="nav-link" href="/contacto.html">Contacto</a> -->
+              <a class="nav-link" href="../chi/productos.html">产品</a>
+              <a class="nav-link" href="../chi/pesca.html">钓鱼</a>
+              <a class="nav-link" href="../chi/contacto.html">接触</a>
+              <a class="nav-link" href="../chi/nosotros.html">关于我们</a>
             </div>
             <div class="language-change">
-              <img src="./assets/espana4.png" id="esp" class="lang active" />
-              <a href="./chi/contacto.html"><img src="./assets/china4.png" id="china" class="lang" /></a>
+              <a href="../contacto.html"><img src="../assets/espana4.png" id="esp" class="lang" /></a>
+              <a href="../chi/contacto.html"><img src="../assets/china4.png" id="china" class="lang active" /></a>
             </div>
           </div>
         </div>
@@ -65,23 +64,23 @@
         <div class="row d-flex justify-content-center">
           <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
             <div class="card">
-              <h4 class="mb-4">Envianos tu mensaje</h4>
-              <form class="form-card" method="POST" action="./scripts/mail.php">
+              <h4 class="mb-4">联系我们</h4>
+              <form class="form-card" method="post" action="./scripts/php/registro.php">
                 <div class="row justify-content-between text-left">
                   <div class="form-group col-sm-6 flex-column d-flex">
                     <label class="form-control-label px-3"
-                      >Nombre<span class="text-danger"> *</span></label
+                      >名称<span class="text-danger"> *</span></label
                     >
                     <input
                       type="text"
-                      id="Name"
-                      name="Name"
+                      id="name"
+                      name="name"
                       required
                     />
                   </div>
                   <div class="form-group col-sm-6 flex-column d-flex">
                     <label class="form-control-label px-3"
-                      >Empresa<span class="text-danger"> *</span></label
+                      >商业<span class="text-danger"> *</span></label
                     >
                     <input
                       type="text"
@@ -94,7 +93,7 @@
                 <div class="row justify-content-between text-left">
                   <div class="form-group col-sm-6 flex-column d-flex">
                     <label class="form-control-label px-3"
-                      >Teléfono<span class="text-danger"> *</span></label
+                      >电话<span class="text-danger"> *</span></label
                     >
                     <input
                       type="text"
@@ -105,12 +104,12 @@
                   </div>
                   <div class="form-group col-sm-6 flex-column d-flex">
                     <label class="form-control-label px-3"
-                      >Email<span class="text-danger"> *</span></label
+                      >电子邮件<span class="text-danger"> *</span></label
                     >
                     <input
                       type="text"
-                      id="Email"
-                      name="Email"
+                      id="email"
+                      name="email"
                       placeholder=""
                       required
                     />
@@ -119,7 +118,7 @@
                 <div class="row justify-content-between text-left">
                   <div class="form-group col-sm-6 flex-column d-flex">
                     <label class="form-control-label px-3"
-                      >País<span class="text-danger"> *</span></label
+                      >国家<span class="text-danger"> *</span></label
                     >
                     <input
                       type="text"
@@ -131,7 +130,7 @@
 
                   <div class="form-group col-sm-6 flex-column d-flex">
                     <label class="form-control-label px-3"
-                      >Ciudad<span class="text-danger"> *</span></label
+                      >镇<span class="text-danger"> *</span></label
                     >
                     <input
                       type="text"
@@ -144,19 +143,19 @@
                 <div class="row justify-content-between text-left mt-2">
                   <div class="form-group col-12 flex-column d-flex">
                     <label class="form-control-label"
-                      >Mensaje<span class="text-danger"> *</span></label
+                      >信息<span class="text-danger"> *</span></label
                     >
                     <textarea
                       type="text"
-                      id="Message"
-                      name="Message"
+                      id="message"
+                      name="message"
                       required
                     ></textarea>
                   </div>
                 </div>
                 <div class="row justify-content-end">
                   <div class="form-group col-12">
-                    <input type="submit" class="btn-block btn-primary w-100 btn-submit">
+                    <input type="submit" class="btn-block btn-primary w-100 btn-submit" value="发送">
                   </input>
                   </div>
                 </div>

@@ -1,13 +1,5 @@
 body {
-  /* background: linear-gradient(
-    38deg,
-    rgb(95, 93, 93) 0%,
-    rgba(221, 217, 228, 0.579) 30%,
-    /* rgba(0, 0, 0, 0.055059523809523836) 66%,  rgba(254, 255, 255, 1) 100%
-  );
-  background-size: 450% 450%; */
   position: relative;
-  /* animation: cambiar 12s ease-in-out infinite; */
 }
 
 @keyframes cambiar {
@@ -29,6 +21,16 @@ body {
 .container-custom {
   width: 90%;
   margin: 0 auto;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+p {
+  background-color: rgba(255, 255, 255, 0.55);
 }
 
 .info-card {
