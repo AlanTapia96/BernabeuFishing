@@ -74,8 +74,7 @@ nav {
   top: 0;
   width: 100%;
   z-index: 10000;
-  background-color: #fff;
-  opacity: 0.75;
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
 .nav-link {
@@ -303,15 +302,8 @@ footer a:hover {
 
 @media (max-width: 425px) {
   /*** Banner home ***/
-  #banner-home {
-    padding-top: 2rem;
-    height: 75vh;
-    position: relative;
-  }
-
   #banner-home img {
-    object-fit: none;
-    transform: scale(1.4);
+    object-fit: fill;
   }
 
   .logo {
