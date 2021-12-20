@@ -110,8 +110,12 @@ nav {
 }
 
 #china {
-  height: 27px !important;
-  margin-bottom: 1.1px;
+  height: 27.5px !important;
+  margin-bottom: 2.4px;
+}
+
+#china.active {
+  margin-bottom: -2.5px !important;
 }
 
 .language-change .active {
@@ -269,6 +273,16 @@ footer a:hover {
   .language-change {
     margin-bottom: 0.5rem;
     width: 19%;
+  }
+
+  #china {
+    margin-left: 0.4rem;
+    margin-bottom: 0.1rem;
+  }
+
+  #china.active {
+    margin-left: 0.4rem;
+    margin-bottom: 0 !important;
   }
 
   .logo {
