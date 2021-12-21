@@ -93,6 +93,25 @@ button:focus {
   outline-width: 0;
 }
 
+.success {
+  color: rgb(25, 110, 25);
+  transition: all 2s ease-in-out;
+}
+
+.disp-none {
+  display: none;
+  opacity: 0;
+}
+
+.disp-block {
+  display: block;
+  opacity: 1;
+}
+
+.error {
+  color: rgb(128, 40, 40);
+}
+
 @media (max-width: 768px) {
   #contact-form {
     padding-top: 13%;

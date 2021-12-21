@@ -1,23 +1,29 @@
 <?php
 
-echo "HOLA MUNDO";
+echo "1";
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require_once('/phpMailer/Exception.php');
-require_once('/phpMailer/PHPMailer.php');
-require_once('/phpMailer/SMTP.php');
+echo "2";
+
+require_once('scripts/php/phpMailer/Exception.php');
+require_once('scripts/php/phpMailer/PHPMailer.php');
+require_once('scripts/php/phpMailer/SMTP.php');
+
+echo "3";
 
 $mail = new PHPMailer(true);
 $mail->isSMTP();
 $mail->SMTPDebug = 2;
 $mail->Host = 'smtp.hostinger.com';
-$mail->Port = 587;
 $mail->SMTPAuth = true;
+$mail->Port = 587;
 
 $mail->Username = 'pruebamail@bernabeufishing.com';
 $mail->Password = 'Bernabeu1';
+
+echo "3";
 
 date_default_timezone_set("America/Argentina/Buenos_Aires");
 
@@ -44,7 +50,7 @@ if(count($listaerrores) > 0)
 
     try {
         //Recipients
-        $mail->setFrom('alantapia@alantapia.com', 'Alan');
+        $mail->setFrom('pruebamail@bernabeufishing.com', 'Alan');
         $mail->addAddress('tapia.alan.g@gmail.com', 'Alan Tapia');
 
         $mail->isHTML(true);

@@ -66,7 +66,7 @@
           <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
             <div class="card">
               <h4 class="mb-4">Envianos tu mensaje</h4>
-              <form class="form-card" method="POST" action="./scripts/mail.php">
+              <form class="form-card" method="POST">
                 <div class="row justify-content-between text-left">
                   <div class="form-group col-sm-6 flex-column d-flex">
                     <label class="form-control-label px-3"
@@ -74,8 +74,8 @@
                     >
                     <input
                       type="text"
-                      id="Name"
-                      name="Name"
+                      id="name"
+                      name="name"
                       required
                     />
                   </div>
@@ -109,8 +109,8 @@
                     >
                     <input
                       type="text"
-                      id="Email"
-                      name="Email"
+                      id="email"
+                      name="email"
                       placeholder=""
                       required
                     />
@@ -148,8 +148,8 @@
                     >
                     <textarea
                       type="text"
-                      id="Message"
-                      name="Message"
+                      id="message"
+                      name="message"
                       required
                     ></textarea>
                   </div>
@@ -161,6 +161,8 @@
                   </div>
                 </div>
               </form>
+              <h5 class="success disp-none">Formulario enviado con éxito</h5>
+              <h5 class="error disp-none">No se pudo enviar el formulario. Intente nuevamente en unos minutos</h5>
             </div>
           </div>
         </div>
@@ -199,5 +201,6 @@
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"
   ></script>
-  <script src="./scripts/main.js"></script>
+  <!-- <script src="./scripts/main.js" type="module"></script> -->
+  <script src='./scripts/contact-form.js' type="module"></script>
 </html>
