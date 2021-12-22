@@ -40,10 +40,6 @@ body {
   background-position-x: 20%;
 }
 
-/* header{
-  position: relative;
-} */
-
 header .sticky {
   padding: 0.3rem 0 0.8rem;
   /* background-color: lightslategrey !important; */
@@ -110,12 +106,17 @@ nav {
 }
 
 #china {
-  height: 27.5px !important;
+  height: 28px !important;
   margin-bottom: 2.4px;
 }
 
+#esp {
+  margin-bottom: 2px;
+}
+
 #china.active {
-  margin-bottom: -2px !important;
+  margin-bottom: 1px !important;
+  height: 28px !important;
 }
 
 .language-change .active {
@@ -301,6 +302,14 @@ footer a:hover {
 
   #china {
     margin-left: 0.5rem;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  #china {
+    margin-bottom: 2.4px;
+    height: 28.5px !important;
   }
 }
 
@@ -311,6 +320,10 @@ footer a:hover {
 
   .logo {
     width: 27%;
+  }
+
+  #china.active {
+    margin-bottom: 3px !important;
   }
 }
 

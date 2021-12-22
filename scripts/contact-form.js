@@ -8,6 +8,9 @@ function validateEmail(email) {
 const form = document.querySelector(".form-card");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+  const spinner = document.querySelector(".spinner");
+  spinner.classList.remove("disp-none");
+  spinner.classList.add("disp-block");
   let name = document.querySelector("#name").value;
   let email = document.querySelector("#email").value;
   let message = document.querySelector("#message").value;
@@ -25,13 +28,15 @@ form.addEventListener("submit", (e) => {
   );
   xhr.onload = function () {
     if (this.status == 200) {
+      spinner.classList.add("disp-none");
       successElement.classList.remove("disp-none");
       successElement.classList.add("disp-block");
       form.reset();
     } else {
+      spinner.classList.add("disp-none");
       successElement.classList.remove("disp-none");
       errorElement.classList.add("disp-block");
-      console.log("no enviado");
+      form.reset();
     }
   };
 });
